@@ -33,7 +33,7 @@ This chart was created to compare the black incarceration trends to the white in
 
 ## U.S. Trends Map
 
-Below, I have included two maps. One being the 2018 Black imprisonment population in the United States from county to county. The other being the 2018 White imprisonment population in the United States, also based on counties. At first glance, there is no significant difference between the two maps. With that being said, when you take a closer look, the Black imprisonment population map seems to have a higher count in more counties than the White imprisonment population map. Seeing as that this difference is minuscule, this infers that imprisonment trends may not be related to racism, specifically when it comes to Black and White inmates. 
+Below, I have included two maps to compare and contrast the black and white imprisonment rate across the United States. One being the 2018 Black imprisonment population in the United States from county to county. The other being the 2018 White imprisonment population in the United States, also based on counties. At first glance, there is no significant difference between the two maps. With that being said, when you take a closer look, the Black imprisonment population map seems to have a higher count in more counties than the White imprisonment population map. Seeing as that this difference is minuscule, this infers that imprisonment trends may not be related to racism, specifically when it comes to Black and White inmates. 
 ```{r echo = FALSE}
 b_pop_map
 w_pop_map
