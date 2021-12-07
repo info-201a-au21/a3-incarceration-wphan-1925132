@@ -13,9 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Introduction:
 For this assignment, I have chosen the two variables black_jail_pop and white_jail_pop which are the measurements of jail population based on two different races. My intention is to figure out if there are patterns of injustices in terms of race. I will do this by comparing the data based on these chosen variables.
 
-To start off, the county with the largest black jail population is Henrico County. The year with the highest population of black inmates is 1993. The state with the largest black jail population is California. The county in New York with the largest black jail population is Los Angeles County which I believe is an error in the dataset. Finally, the mean of the black jail population is 1151.26
+## Summary Statistics:
+To start off, the county with the largest black jail population is **`r highest_black_county`**. The year with the highest population of black inmates is **`r black_highest_year`**. The state with the largest black jail population is **`r highest_black_state`**. The county in New York with the largest black jail population is **`r highest_black_ny`** which I believe is an error in the dataset. Finally, the mean of the black jail population is **`r mean_black_pop`**.
 
-In contrast, the county with the largest white jail population is Los Angeles County. The year with the highest population of white inmates is 1993. The state with the largest white jail population is California. The county in New York with the largest white jail population is Los Angeles County which may also be an error in the dataset. Lastly, the mean of the white jail population is 802.79.
+In contrast, the county with the largest white jail population is **`r highest_white_county`**. The year with the highest population of white inmates is **`r white_highest_year`**. The state with the largest white jail population is **`r highest_white_state`**. The county in New York with the largest white jail population is **`r highest_white_ny`** which may also be an error in the dataset. Lastly, the mean of the white jail population is **`r mean_white_pop`**.
 
 ## Trends over Time Chart:
 ```{r echo = FALSE}
@@ -24,17 +25,23 @@ black_ny_plot
 
 This chart is important because the incarceration of POC, specifically black people continues to be an extremely relevant topic in the United States. The goal was to see how black incarceration rates have changed over the years. Looking at the graph, it appears that there was a steady growth of incarceration rates starting in 1985. It peaked in 1993 and then had a gradual downfall which continues on into recent years.
 
-## Variable Comparison Chart
 ```{r echo = FALSE}
 white_ny_plot
 ```
 
 This chart was created to compare the black incarceration trends to the white incarceration trends is a great way to show the disproportion of the incarceration of POC, specifically black inmates. Comparing the two datasets, on average, more black people are imprisoned annually than white people. A pattern that emerged from both datasets was the spike in imprisonments in 1993.
 
+## Variable Comparison Chart
+```{r echo = FALSE}
+test
+```
+
+This scatterplot was created to compare the black jail population to the white jail population, year by year. This chart is a great way to show the disproportion of the incarceration of POC, specifically black inmates. As can be seen,
+for the most part, on average, more black people are imprisoned annually than white people. 
+
 ## U.S. Trends Map
 
-Below, I have included two maps to compare and contrast the black and white imprisonment rate across the United States. One being the 2018 Black imprisonment population in the United States from county to county. The other being the 2018 White imprisonment population in the United States, also based on counties. At first glance, there is no significant difference between the two maps. With that being said, when you take a closer look, the Black imprisonment population map seems to have a higher count in more counties than the White imprisonment population map. Seeing as that this difference is minuscule, this infers that imprisonment trends may not be related to racism, specifically when it comes to Black and White inmates. 
-
+Below, I have included two maps to compare and contrast the black and white imprisonment rate across the United States. One being the 2018 Black imprisonment population in the United States from county to county. The other being the 2018 White imprisonment population in the United States, also based on counties. At first glance, there is no significant difference between the two maps. With that being said, when you take a closer look, the Black imprisonment population map seems to have a higher count in more counties than the White imprisonment population map. Seeing as that this difference is minuscule, this infers that imprisonment trends may not be related to racism, specifically when it comes to Black and White inmates.                  
 ```{r echo = FALSE}
 b_pop_map
 w_pop_map
